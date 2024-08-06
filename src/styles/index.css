@@ -2,7 +2,6 @@
     background-image: url("https://img.freepik.com/vector-gratis/escena-casa-jardin_1308-97666.jpg?t=st=1722941456~exp=1722945056~hmac=f9cde80176c017607b54e230786e353ae3d3ff524c5826df824fa91500662f36&w=1480");
     height: 100vh;
     width: 100%;
-    position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,10 +19,8 @@
 
 }
 
-.semaforo {
 
-    
-
+.semaforo.container {
     margin: auto;
     list-style-type: none;
     border: 6px double grey;
@@ -31,62 +28,41 @@
     background: linear-gradient(-90deg, #45484d 0%, #000000 100%);
     border-radius: 20%;
     box-shadow: 0px 0px 0px 20px rgb(0, 0, 0);
-
-}
-
-.semaforo.container {
-
-
     display: flex;
-    margin: auto;
     background-color: grey;
     height: 50%;
-    width: 10%;
+    width: 150px;
     flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+    justify-content: center;   
+   align-content: space-around;
 }
 
-h1 {
+.red,
+.yellow,
+.green,
+.purple {
 
-    background-color: yellow;
-}
-
-.red {
-
-    background-color: red;
     border-radius: 50%;
     height: 100px;
     width: 100px;
-    margin: 10px;
+
+}
+
+.red {
+    background-color: red;
 }
 
 .green {
     background-color: green;
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    margin: 10px;
 
 }
 
 .yellow {
     background-color: yellow;
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    margin: 10px;
 }
 
 .purple {
-
     background-color: rgb(195, 0, 255);
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    margin: 10px;
-
-
 }
 
 .iluminar {
@@ -94,4 +70,39 @@ h1 {
 
 }
 
-.boton-cambio {}
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+   
+
+}
+
+.boton-cambio,
+.boton-morado {
+    background-color: pink;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #e49bc6 ;
+    /* Color del botón */
+    transition: transform 0.3s ease-in-out;
+    /* Transición leve al pulsar */
+}
+
+
+.boton-cambio:hover,
+.boton-morado:hover {
+    background-color: #da24da;
+    /* Para cambiar el color al pasar el cursor sobre el botón */
+}
+
+.boton-cambio:active,
+.boton-morado:active {
+    transform: scale(0.9);
+    /* Reduce un poco el tamaño del botón al hacer clic */
+}
