@@ -1,12 +1,97 @@
+.fondo {
+    background-image: url("https://img.freepik.com/vector-gratis/escena-casa-jardin_1308-97666.jpg?t=st=1722941456~exp=1722945056~hmac=f9cde80176c017607b54e230786e353ae3d3ff524c5826df824fa91500662f36&w=1480");
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.palo-semaforo {
+    width: 35px;
+    height: 85px;
+    background-color: black;
+    margin: auto;
+    border-color: black;
+    border-width: 5px;
+    border-style: double;
 
-*/
+}
+
+.semaforo {
+
+    
+
+    margin: auto;
+    list-style-type: none;
+    border: 6px double grey;
+    background: black;
+    background: linear-gradient(-90deg, #45484d 0%, #000000 100%);
+    border-radius: 20%;
+    box-shadow: 0px 0px 0px 20px rgb(0, 0, 0);
+
+}
+
+.semaforo.container {
+
+
+    display: flex;
+    margin: auto;
+    background-color: grey;
+    height: 50%;
+    width: 10%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+h1 {
+
+    background-color: yellow;
+}
+
+.red {
+
+    background-color: red;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+
+.green {
+    background-color: green;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+
+}
+
+.yellow {
+    background-color: yellow;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+
+.purple {
+
+    background-color: rgb(195, 0, 255);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+
+
+}
+
+.iluminar {
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.671);
+
+}
+
+.boton-cambio {}
